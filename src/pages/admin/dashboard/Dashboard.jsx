@@ -17,7 +17,6 @@ const Dashboard = () => {
   const { data: comments = [] } = useGetCommentsQuery();
   const { data: users = {} } = useGetUserQuery();
   const adminCounts = users.users?.filter(user => user.role === 'admin').length;
-  console.log(users)
 
   return (
     <>

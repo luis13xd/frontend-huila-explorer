@@ -19,7 +19,6 @@ const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { user } = useSelector((state) => state.auth);
-    console.log(user)
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const dispatch = useDispatch();
     const [logoutUser] = useLogoutUserMutation();

@@ -11,7 +11,6 @@ const Blogs = () => {
 
     //get data using redux
     const { data: blogs = [], error, isLoading } = useFetchBlogsQuery(query);
-    console.log(blogs)
 
     const handleSearchChange = (e) => {
         setSearch(e.target.value);

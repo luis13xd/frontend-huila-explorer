@@ -28,7 +28,6 @@ const UpdatePost = () => {
     isLoading,
     refetch,
   } = useFetchBlogsByIdQuery(id);
-  console.log(blog);
   const { user } = useSelector((state) => state.auth);
 
   useEffect(() => {
@@ -71,17 +70,16 @@ const UpdatePost = () => {
         title: title || blog.post.title,
         coverImg: coverImg || blog.post.coverImg,
         content,
-        category,
+        category: category || blog.post.category,
         description: metaDescription || blog.post.description,
         author: user?._id,
         rating: rating || blog.post.rating,
       };
-      //console.log(updatePost)
       const response = await updateBlog({ id, ...updatedPost }).unwrap();
       console.log(response);
-      alert("guardadooo actualizado");
+      alert("guardado y actualizado");
       refetch();
-      navigate("/dashboard");
+      navigate('/dashboard/manage-items')
     } catch (error) {
       console.error("Eroor al subir sitio", error);
       setMessage("fallo al guardadr");
