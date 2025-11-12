@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import { useFetchBlogsQuery } from "../../redux/features/blogs/blogsApi";
+import { useNavigate } from "react-router-dom";
 
 // Imágenes locales por defecto
 import Image1 from "../../assets/hero-carousel/img1.jpg";
@@ -14,16 +15,29 @@ import Image5 from "../../assets/hero-carousel/img5.jpg";
 import Image6 from "../../assets/hero-carousel/img6.jpg";
 
 const Hero = () => {
-  // ✅ Obtenemos los sitios desde el backend
+  const navigate = useNavigate();
   const { data: blogs = [] } = useFetchBlogsQuery({});
 
-  // ✅ Unimos las imágenes locales + las de los sitios
-  const defaultImages = [Image1, Image2, Image3, Image4, Image5, Image6];
-  const siteImages = blogs
-    .filter(blog => blog.coverImg) // solo los que tengan imagen principal
-    .map(blog => blog.coverImg);
+  // Imágenes locales
+  const defaultImages = [
+    { src: Image1 },
+    { src: Image2 },
+    { src: Image3 },
+    { src: Image4 },
+    { src: Image5 },
+    { src: Image6 },
+  ];
 
-  const allImages = [...defaultImages, ...siteImages]; // mezcla final
+  // Imágenes de sitios subidos
+  const siteImages = blogs
+    .filter((blog) => blog.coverImg)
+    .map((blog) => ({
+      src: blog.coverImg,
+      id: blog._id, // ✅ guardamos el id para poder navegar
+    }));
+
+  // Combinamos ambas listas
+  const allImages = [...defaultImages, ...siteImages];
 
   return (
     <div className="flex flex-col md:flex-row justify-between items-center md:gap-14 gap-8">
@@ -61,11 +75,18 @@ const Hero = () => {
         >
           {allImages.map((img, index) => (
             <SwiperSlide key={index}>
-              <img
-                src={img}
-                alt={`slide-${index}`}
-                className="w-full lg:h-[420px] sm:h-96 h-80 object-cover rounded-xl"
-              />
+              <div
+                onClick={() => {
+                  if (img.id) navigate(`/blogs/${img.id}`);
+                }}
+                className={`cursor-${img.id ? "pointer" : "default"}`}
+              >
+                <img
+                  src={img.src}
+                  alt={`slide-${index}`}
+                  className="w-full lg:h-[420px] sm:h-96 h-80 object-cover rounded-xl"
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
