@@ -26,7 +26,7 @@ const About = () => {
         {/* IMAGEN */}
         <div className="md:w-1/2">
           <img 
-            src=''
+            src='https://international-coaching-institute.com/wp-content/uploads/2022/05/Visio%CC%81n-personal-del-futuro.jpg'
             className="rounded-xl shadow-lg w-full object-cover"
           />
         </div>
