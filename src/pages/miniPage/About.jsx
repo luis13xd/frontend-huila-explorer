@@ -39,7 +39,7 @@ const About = () => {
           {/* MISIÓN */}
           <div className="bg-white shadow-sm rounded-xl p-6 hover:shadow-md transition">
             <img 
-              src='' 
+              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlB6kO_ZFOc93K0HT0NpQlFHLEAkI6Uu73JfFN9xvVGOiBqtrAcg9Y79B70Lb_jTDRyqU&usqp=CAU' 
               className="rounded-lg h-40 w-full object-cover mb-4"
             />
             <h3 className="text-xl font-semibold text-blue-700 mb-2">Nuestra Misión</h3>
@@ -52,7 +52,7 @@ const About = () => {
           {/* VISIÓN */}
           <div className="bg-white shadow-sm rounded-xl p-6 hover:shadow-md transition">
             <img 
-              src=''
+              src='https://recfaces.com/wp-content/uploads/2021/06/la-vision-por-computadora-scaled.jpg'
               className="rounded-lg h-40 w-full object-cover mb-4"
             />
             <h3 className="text-xl font-semibold text-blue-700 mb-2">Nuestra Visión</h3>
@@ -71,6 +71,7 @@ const About = () => {
               <li>✔ Innovación constante</li>
               <li>✔ Diseño y tecnología con propósito</li>
               <li>✔ Acompañamiento cercano</li>
+              <li>✔ Brindamos ideas</li>
             </ul>
           </div>
         </div>
@@ -90,7 +91,7 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10">
 
             <div>
-              <h3 className="text-xl font-semibold">+5 Años</h3>
+              <h3 className="text-xl font-semibold">+3 Años</h3>
               <p className="text-sm mt-2">Experiencia impulsando marcas</p>
             </div>
 
