@@ -103,18 +103,6 @@ const Policy = () => {
             </p>
           </section>
 
-          {/* Contacto */}
-          <section>
-            <h2 className="text-2xl font-semibold text-[#0a1128] mb-3">
-              8. Contacto
-            </h2>
-            <p className="text-gray-700">
-              Si tienes preguntas sobre esta Política de Privacidad, puedes contactarnos en:
-            </p>
-            <p className="mt-2 font-semibold text-[#0a1128]">
-              contacto@huilaexplorermarketing.com
-            </p>
-          </section>
         </div>
       </div>
     </div>
