@@ -2,7 +2,7 @@ import React from "react";
 
 const Policy = () => {
   return (
-    <div className="bg-white text-gray-800 px-6 lg:px-20 py-16">
+    <div className="bg-white text-gray-800 px-6 lg:px-20 py-10">
       <div className="max-w-4xl mx-auto">
         {/* Encabezado */}
         <h1 className="text-3xl md:text-4xl font-bold text-center text-[#0a1128] mb-10">
