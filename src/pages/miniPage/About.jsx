@@ -22,7 +22,6 @@ const About = () => {
           </p>
         </div>
 
-        {/* IMAGEN */}
         <div className="md:w-1/2">
           <img 
             src='https://international-coaching-institute.com/wp-content/uploads/2022/05/Visio%CC%81n-personal-del-futuro.jpg'
