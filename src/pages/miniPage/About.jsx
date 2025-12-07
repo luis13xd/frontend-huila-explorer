@@ -29,8 +29,7 @@ const About = () => {
           />
         </div>
       </section>
-
-      {/* MISIÓN – VISIÓN – VALORES */}
+      
       <section className="bg-gray-100 py-16">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
 
