@@ -57,7 +57,6 @@ const About = () => {
             </p>
           </div>
 
-          {/* VALORES */}
           <div className="bg-white shadow-sm rounded-xl p-6 hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-700 mb-2">Nuestros Valores</h3>
             <ul className="text-sm text-gray-600 space-y-2">
