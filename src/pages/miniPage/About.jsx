@@ -29,11 +29,10 @@ const About = () => {
           />
         </div>
       </section>
-      
+
       <section className="bg-gray-100 py-16">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
 
-          {/* MISIÓN */}
           <div className="bg-white shadow-sm rounded-xl p-6 hover:shadow-md transition">
             <img 
               src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlB6kO_ZFOc93K0HT0NpQlFHLEAkI6Uu73JfFN9xvVGOiBqtrAcg9Y79B70Lb_jTDRyqU&usqp=CAU' 
