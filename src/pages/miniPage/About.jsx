@@ -71,7 +71,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* SECCIÓN FINAL */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="bg-blue-900 text-white rounded-2xl p-10 md:p-16 text-center shadow-lg">
 
