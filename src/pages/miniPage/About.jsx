@@ -45,7 +45,6 @@ const About = () => {
             </p>
           </div>
 
-          {/* VISIÓN */}
           <div className="bg-white shadow-sm rounded-xl p-6 hover:shadow-md transition">
             <img 
               src='https://recfaces.com/wp-content/uploads/2021/06/la-vision-por-computadora-scaled.jpg'
