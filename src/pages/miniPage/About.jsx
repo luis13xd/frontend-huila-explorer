@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="bg-white text-gray-800">
       
-      {/* HERO SECTION */}
+     
       <section className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
         
         {/* TEXTO */}
