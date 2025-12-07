@@ -7,7 +7,6 @@ const About = () => {
      
       <section className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
         
-        {/* TEXTO */}
         <div className="md:w-1/2">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Impulsamos tu <span className="text-blue-700">crecimiento digital</span>
